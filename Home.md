@@ -11,6 +11,7 @@ LLM 学习总览。从这里进入各主题与课程。
 
 > 知识沉淀的家。详见 [[_MOC]]。
 
+- [[10-Topics/Basics/_index|Basics 基础知识]]
 - [[10-Topics/Transformer/_index|Transformer]]
 - [[10-Topics/Pretraining/_index|Pretraining 预训练]]
 - [[10-Topics/Inference-Optimization/_index|Inference Optimization 推理优化]]

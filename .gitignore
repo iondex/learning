@@ -19,6 +19,9 @@ Thumbs.db
 data/
 datasets/
 checkpoints/
+
+# 课程作业的大体积数据集（可从课程站重新下载，不入库）
+20-Courses/CS224N/assignments/a2/data/
 wandb/
 __pycache__/
 *.pyc
