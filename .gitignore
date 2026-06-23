@@ -1,0 +1,25 @@
+# Obsidian 本地工作区状态（不应同步）
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# 临时大文件（模型权重、数据集、checkpoint 等不应进库）
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.safetensors
+data/
+datasets/
+checkpoints/
+wandb/
+__pycache__/
+*.pyc
+.venv/
