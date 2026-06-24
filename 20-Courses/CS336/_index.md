@@ -24,7 +24,7 @@ tags: [moc, course/cs336]
 | L07 | Parallelism 1 | ⬜ | | [[10-Topics/Systems/_index\|Systems]] |
 | L08 | Parallelism 2 | ⬜ | | [[10-Topics/Systems/_index\|Systems]] |
 | L09 | Scaling Laws 1 | ⬜ | | [[10-Topics/Scaling-Laws/_index\|Scaling Laws]] |
-| L10 | Inference | ⬜ | | [[10-Topics/Inference-Optimization/_index\|Inference Opt]] |
+| L10 | Inference | ⬜ | | [[10-Topics/Systems/_index\|Systems (推理优化)]] |
 | L11 | Scaling Laws 2 | ⬜ | | [[10-Topics/Scaling-Laws/_index\|Scaling Laws]] |
 | L12 | Evaluation | ⬜ | | |
 | L13 | Data 1 | ⬜ | | |

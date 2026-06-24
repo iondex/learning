@@ -14,10 +14,9 @@ LLM 学习总览。从这里进入各主题与课程。
 - [[10-Topics/Basics/_index|Basics 基础知识]]
 - [[10-Topics/Transformer/_index|Transformer]]
 - [[10-Topics/Pretraining/_index|Pretraining 预训练]]
-- [[10-Topics/Inference-Optimization/_index|Inference Optimization 推理优化]]
 - [[10-Topics/RL-and-Alignment/_index|RL & Alignment 强化学习与对齐]]
-- [[10-Topics/Agents/_index|Agents 智能体]]
-- [[10-Topics/Systems/_index|Systems 系统与并行]]
+- ⭐ [[10-Topics/Agents/_index|Agents 智能体]]
+- ⭐ [[10-Topics/Systems/_index|Systems（推理优化 + 系统/并行）]]
 - [[10-Topics/Scaling-Laws/_index|Scaling Laws]]
 
 ## 🎓 课程
