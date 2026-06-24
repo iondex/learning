@@ -14,7 +14,7 @@ tags: [moc, topic/basics]
 - **PyTorch 基础**：张量、autograd、训练循环。
 
 ## 笔记
-_（暂无，开始记录后在此列出）_
+- [[wordvecs]] — 词向量与 word2vec（分布式语义 / softmax / SGD / negative sampling）
 
 ## 相关
 - [[10-Topics/Transformer/_index|Transformer]] · [[10-Topics/Pretraining/_index|Pretraining]]

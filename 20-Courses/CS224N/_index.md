@@ -17,7 +17,7 @@ Stanford NLP 入门到 LLM。作为 CS336 的前置基础。
 | # | 主题 | 状态 | Slides | 主要关联 |
 |---|------|------|--------|----------|
 | L01 | Intro & History | ⬜ | — | |
-| L02 | Word Vectors | ⬜ | [[cs224n-2026-lecture02-wordvecs.pdf\|pdf]] | |
+| L02 | Word Vectors | 🟡 | [[cs224n-2026-lecture02-wordvecs.pdf\|pdf]] | [[wordvecs]] |
 | L03 | Neural Nets & Backprop | ⬜ | [[cs224n-2026-lecture03-neuralnets.pdf\|pdf]] | |
 | L04 | RNN Language Models | ⬜ | [[cs224n-2026-lecture04-rnnlm.pdf\|pdf]] | |
 | L05 | Transformers | ⬜ | [[cs224n-2026-lecture05-transformers.pdf\|pdf]] | [[10-Topics/Transformer/_index\|Transformer]] |
