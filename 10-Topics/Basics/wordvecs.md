@@ -28,15 +28,20 @@ status: growing
 给定中心词 $c$，预测上下文词 $o$ 的概率用 **softmax**：
 $$P(o\mid c)=\frac{\exp(u_o^\top v_c)}{\sum_{w\in V}\exp(u_w^\top v_c)}$$
 - 分子 $u_o^\top v_c$ = 相似度打分（点积越大越相似）；
-- 分母 = **partition function（归一化）**，保证是合法概率分布（见 [[softmax]] 的两条件：非负 + 和为 1）。
+- 分母 = **partition function（归一化）**。
+
+### softmax
+把任意实数打分向量 $z$ 变成概率分布：$\text{softmax}(z)_i=\dfrac{\exp(z_i)}{\sum_j\exp(z_j)}$。
+- **必是概率分布**：exp 让每项 $>0$（非负），除以总和让和为 1。
+- 名字 = **soft + max**：保序放大最大项，但不把其余项压成 0（可导，区别于硬 argmax）。
+- 性质：平移不变 $\text{softmax}(z+c)=\text{softmax}(z)$（实现时减 $\max$ 防溢出）；温度 $T$ 越小分布越尖（$\text{softmax}(z/T)$）。
 
 ## 目标函数
 对语料每个位置的中心词、窗口（半径 $m$）内每个上下文词，**最大化 likelihood** ⟺ **最小化负对数似然**（即 cross-entropy loss）：
 $$J(U,V)=-\frac{1}{T}\sum_{t=1}^{T}\sum_{\substack{-m\le j\le m\\ j\ne 0}}\log P(w_{t+j}\mid w_t)$$
-（notes 写成对"所有文档 / 文档内所有词 / 窗口内所有上下文"的三重求和。）
 
 ## 优化：GD vs SGD
-- **被优化的是向量参数 $\theta=\{U,V\}$**，不是语料；语料是输入数据。
+- 优化对象是向量参数 $\theta=\{U,V\}$（每个词的 $u_w,v_w$）。
 - **GD**：扫完整语料所有窗口算一次梯度才更新一步。**SGD**：随机抽一个/一批窗口估梯度即更新——语料大时唯一可行，且单窗口梯度稀疏、便宜。
 - 初始化为小随机向量，迭代 $\theta\leftarrow\theta-\alpha\nabla_\theta J$。
 
@@ -55,6 +60,6 @@ $$\log\sigma(u_o^\top v_c)+\sum_{\ell=1}^{k}\log\sigma(-u_\ell^\top v_c),\quad u
 - 直觉：每步只"压低"少数随机负词，平均效果近似压低全词表，省去 partition function。
 
 ## 关联
-- [[softmax]]（待写）· [[_index|Basics]]
-- 后续：上下文相关表示 → [[10-Topics/Transformer/_index|Transformer]]
-- 第二个 notes（Word Vectors 2：CBOW/SVD 细节）尚未消化，待补。
+- [[_index|Basics]] · 后续：上下文相关表示 → [[10-Topics/Transformer/_index|Transformer]]
+
+> TODO：Word Vectors 2（CBOW / SVD 细节）看完后补充。
